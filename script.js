@@ -7,11 +7,11 @@ button.addEventListener('click', ()=>{
 	name = document.querySelector('#name').value;
 	year = document.querySelector('#year').value;
 
-	let updatedHeading = heading.textContent + "?";
+	let updatedHeading = heading.innerText + "?";
 	if(name!=="")updatedHeading += `name=${name}&`;
 	if(year!=="")updatedHeading += `year=${year}`;
 
 	updatedHeading = updatedHeading.endsWith('&')?updatedHeading.slice(0,-1):updatedHeading;
-	heading.textContent = updatedHeading;
+	heading.innerText = updatedHeading;
 });
 });
