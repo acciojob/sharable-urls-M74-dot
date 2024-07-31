@@ -2,7 +2,8 @@
 document.addEventListener('DOMContentLoaded', () => {
 button = document.querySelector('#button');
 
-button.addEventListener('click', ()=>{
+button.addEventListener('click', (event)=>{
+	event.preventDefault();
 	heading = document.querySelector('#url');
 	name = document.querySelector('#name').value;
 	year = document.querySelector('#year').value;
