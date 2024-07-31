@@ -1,4 +1,5 @@
 // your code here
+document.addEventListener('DOMContentLoaded', () => {
 button = document.querySelector('#button');
 
 button.addEventListener('click', ()=>{
@@ -12,4 +13,5 @@ button.addEventListener('click', ()=>{
 
 	updatedHeading = updatedHeading.endsWith('&')?updatedHeading.slice(0,-1):updatedHeading;
 	heading.textContent = updatedHeading;
+});
 });
